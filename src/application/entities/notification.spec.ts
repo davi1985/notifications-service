@@ -37,7 +37,6 @@ describe('Notification.class', () => {
     notification.recipientId = 'new-fake-recipient-id';
     notification.content = new Content('Nova notificação');
     notification.category = 'new-category';
-    notification.readAt = new Date();
 
     expect(notification.recipientId).toBe(notification.recipientId);
     expect(notification.content).toBe(notification.content);

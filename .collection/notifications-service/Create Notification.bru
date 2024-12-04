@@ -4,8 +4,16 @@ meta {
   seq: 2
 }
 
-get {
-  url: localhost://3000
-  body: none
+post {
+  url: {{host}}/notifications
+  body: json
   auth: none
+}
+
+body:json {
+  {
+    "recipientId": "08a62f8a-18c1-419f-aa2c-f789bde58677",
+    "content": "Você tem uma nova solicitação",
+    "category": "social"
+  }
 }
